@@ -66,3 +66,5 @@ SELECT email as "Student Email" FROM students;
 -- table filtaring by name in assending od desending
 SELECT *  FROM students ORDER BY first_name ASC;
 SELECT *  FROM students ORDER BY first_name DESC;
+SELECT *  FROM students ORDER BY age DESC;
+SELECT *  FROM students ORDER BY age ASC;
