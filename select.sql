@@ -68,3 +68,12 @@ SELECT *  FROM students ORDER BY first_name ASC;
 SELECT *  FROM students ORDER BY first_name DESC;
 SELECT *  FROM students ORDER BY age DESC;
 SELECT *  FROM students ORDER BY age ASC;
+
+
+-- Uniq data find
+SELECT DISTINCT country  FROM students;
+SELECT DISTINCT blood_group  FROM students;
+
+
+-- Conditional data filter
+SELECT * FROM students WHERE country = 'USA';
