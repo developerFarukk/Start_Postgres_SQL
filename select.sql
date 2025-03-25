@@ -113,3 +113,12 @@ SELECT * FROM students WHERE NOT country = 'USA';
 
 -- Null value not find
 SELECT COALESCE(email, 'email not provide') as "Email", blood_group, first_name from students;
+
+
+-- Avoid duolicat find name
+SELECT * FROM students WHERE country IN('USA', 'UAE');
+SELECT * FROM students WHERE country NOT IN('USA', 'UAE');
+
+
+-- range filter 
+SELECT * FROM students WHERE age BETWEEN 22 AND 25;
