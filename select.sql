@@ -91,3 +91,25 @@ WHERE (country = 'USA' OR country = 'UK') and age = 22;
 -- age condition
 SELECT * from students
 WHERE age > 24;
+
+SELECT * from students WHERE age <= 24;
+
+
+-- Upercash and Lower casgh function
+SELECT lower(first_name), *  FROM students;
+
+
+--  add doble column 
+SELECT  concat(first_name, ' ' , last_name), *  from students;
+
+
+-- text kebgth find
+SELECT length(first_name), * from students;
+
+
+-- NOT function মানে USA এর data গুলো থাকবে না।
+SELECT * FROM students WHERE NOT country = 'USA';
+
+
+-- Null value not find
+SELECT COALESCE(email, 'email not provide') as "Email", blood_group, first_name from students;
