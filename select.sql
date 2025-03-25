@@ -77,3 +77,17 @@ SELECT DISTINCT blood_group  FROM students;
 
 -- Conditional data filter
 SELECT * FROM students WHERE country = 'USA';
+
+
+-- Multiple condition data filter
+SELECT * FROM students WHERE grade = 'A' AND course = 'Computer Science' ;
+
+
+-- Multiple AND & OR data filter
+SELECT * FROM students
+WHERE (country = 'USA' OR country = 'UK') and age = 22;
+
+
+-- age condition
+SELECT * from students
+WHERE age > 24;
