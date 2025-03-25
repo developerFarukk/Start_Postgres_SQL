@@ -2,6 +2,10 @@
 -- Query database
 select * from person;
 
+select * from person1;
+
+
+
 
 -- insert table data
 INSERT INTO person values (4, 'samim', 28);
@@ -46,3 +50,11 @@ ADD constraint unique_person_user_age UNIQUE(user_age);
 -- Unique value remove
 ALTER TABLE person
 DROP constraint unique_person_user_age;
+
+
+-- table data clear
+TRUNCATE TABLE person1
+
+
+-- table data and stracture clear
+DROP TABLE person1
