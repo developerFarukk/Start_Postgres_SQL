@@ -47,6 +47,22 @@ VALUES
 
 
 
+-- table formet দেখার জন্য
+select  from students;
 
 
+-- all table data get
 select * from students;
+
+
+-- Spasific table data get
+SELECT email, age FROM students;
+
+-- table title k onno name dekanur jonno
+SELECT email as "Student Email" FROM students;
+
+
+
+-- table filtaring by name in assending od desending
+SELECT *  FROM students ORDER BY first_name ASC;
+SELECT *  FROM students ORDER BY first_name DESC;
