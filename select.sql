@@ -127,3 +127,41 @@ SELECT * FROM students WHERE age BETWEEN 22 AND 25;
 -- Date tang filtering
 SELECT * FROM students
 WHERE dob BETWEEN '2000-01-01' AND '2001-01-01' ORDER BY dob;
+
+
+-- -----------------------------------    Use of Like 
+
+-- Use LIKE as Search in last word / end of
+SELECT * FROM students
+WHERE first_name LIKE '%R';
+
+
+-- Use LIKE as Search in last word / start of of
+SELECT * FROM students
+WHERE first_name LIKE 'O%';
+
+
+
+-- Use LIKE as Search in last word / Midel word search 
+SELECT * FROM students
+WHERE first_name LIKE '__A%';
+
+
+
+-- Use LIKE as Search in last word / Midel word search 
+SELECT * FROM students
+WHERE first_name LIKE '___Z%';
+
+
+-- Use LIKE as Search in last word / Rotal word search 
+SELECT * FROM students
+WHERE first_name LIKE '____A';
+
+-- Use LIKE as Search in last word / Rotal word search 
+SELECT * FROM students
+WHERE first_name LIKE '__A_';
+
+
+-- Use LIKE as Search in last word  Cash sencetive
+SELECT * FROM students
+WHERE first_name ILIKE '%r';
