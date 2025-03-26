@@ -51,3 +51,13 @@ SELECT CURRENT_DATE - INTERVAL '1 year';
 
 -- Date Calculate
 SELECT age(CURRENT_DATE, '2000-05-13');
+
+SELECT *, age(CURRENT_DATE, dob) FROM students;
+
+
+-- extract Date
+SELECT extract(MONTH FROM '2025-01-25'::date);
+
+SELECT extract(DAY FROM '2025-01-25'::date);
+
+SELECT extract(YEAR FROM '2025-01-25'::date);
