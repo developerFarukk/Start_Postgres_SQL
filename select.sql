@@ -165,3 +165,45 @@ WHERE first_name LIKE '__A_';
 -- Use LIKE as Search in last word  Cash sencetive
 SELECT * FROM students
 WHERE first_name ILIKE '%r';
+
+
+-- ------------------------   Limite and Cost  ----------------------
+
+SELECT * FROM students LIMIT 5;
+
+
+SELECT * FROM students WHERE country NOT IN('USA', 'UAE') LIMIT 5;
+
+
+-- Ofset/ bad diya dibe
+SELECT * FROM students WHERE country NOT IN('USA', 'UAE') LIMIT 5 OFFSET 2;
+SELECT * FROM students WHERE country NOT IN('USA', 'UAE') LIMIT 5 OFFSET 4;
+
+
+-- Pagination use of ofset and Limite
+SELECT * FROM students LIMIT 5 OFFSET 5 * 0;
+SELECT * FROM students LIMIT 5 OFFSET 5 * 1;
+SELECT * FROM students LIMIT 5 OFFSET 5 * 2;
+
+
+
+-------------------------    DELETE table data  -------------------
+
+
+DELETE FROM students WHERE grade = 'C';
+DELETE FROM students WHERE grade = 'C' AND country = 'USA';
+
+
+
+-------------------------   Update table data  -------------------
+
+
+UPDATE students 
+SET email = 'antagi@gmailcom'
+WHERE student_id = 2;
+
+
+
+UPDATE students 
+SET email = 'antagi@gmailcom', age = 25
+WHERE student_id = 2;
