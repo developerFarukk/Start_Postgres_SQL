@@ -122,3 +122,8 @@ SELECT * FROM students WHERE country NOT IN('USA', 'UAE');
 
 -- range filter 
 SELECT * FROM students WHERE age BETWEEN 22 AND 25;
+
+
+-- Date tang filtering
+SELECT * FROM students
+WHERE dob BETWEEN '2000-01-01' AND '2001-01-01' ORDER BY dob;
