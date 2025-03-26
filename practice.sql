@@ -143,6 +143,8 @@ VALUES (1, '2022-01-05', 100.50),
 
 DROP Table orders;
 
+SELECT * FROM orders;
+
 -- Find customers who have placed more than 2 orders and calculate the total amount spent by each of these customers.
 
 SELECT customer_id, count(order_id), sum(total_amount) as total_spent
@@ -153,7 +155,7 @@ HAVING
     count(order_id) > 2;
 
 
-    
+
 
 -- Find the total amount of orders placed each month in the year 2022.
 SELECT extract(
