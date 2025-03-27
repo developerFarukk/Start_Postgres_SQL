@@ -65,3 +65,5 @@ SELECT employee_name, salary, department_name
 FROM employe 
 WHERE department_name in 
 (SELECT department_name FROM employe WHERE department_name LIKE '%R%');
+
+-- END
